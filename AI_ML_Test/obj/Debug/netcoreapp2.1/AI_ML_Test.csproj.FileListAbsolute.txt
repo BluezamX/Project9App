@@ -1,0 +1,11 @@
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\bin\Debug\netcoreapp2.1\AI_ML_Test.deps.json
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\bin\Debug\netcoreapp2.1\AI_ML_Test.runtimeconfig.json
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\bin\Debug\netcoreapp2.1\AI_ML_Test.runtimeconfig.dev.json
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\bin\Debug\netcoreapp2.1\AI_ML_Test.dll
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\bin\Debug\netcoreapp2.1\AI_ML_Test.pdb
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\obj\Debug\netcoreapp2.1\AI_ML_Test.csprojAssemblyReference.cache
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\obj\Debug\netcoreapp2.1\AI_ML_Test.csproj.CoreCompileInputs.cache
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\obj\Debug\netcoreapp2.1\AI_ML_Test.AssemblyInfoInputs.cache
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\obj\Debug\netcoreapp2.1\AI_ML_Test.AssemblyInfo.cs
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\obj\Debug\netcoreapp2.1\AI_ML_Test.dll
+C:\Users\jaspe\Downloads\App1\AI_ML_Test\obj\Debug\netcoreapp2.1\AI_ML_Test.pdb
