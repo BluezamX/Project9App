@@ -3,3 +3,6 @@ C:\Users\JasperW\source\repos\App1\App1\App1.Android\obj\Debug\81\App1.Android.n
 C:\Users\JasperW\source\repos\App1\App1\App1.Android\obj\Debug\81\App1.Android.csprojAssemblyReference.cache
 C:\Users\JasperW\App1\App1\App1.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
 C:\Users\JasperW\App1\App1\App1.Android\obj\Debug\81\App1.Android.nuget.stamp
+C:\Users\jaspe\source\repos\Project9App\App1\App1.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+C:\Users\jaspe\source\repos\Project9App\App1\App1.Android\obj\Debug\81\App1.Android.nuget.stamp
+C:\Users\jaspe\source\repos\Project9App\App1\App1.Android\obj\Debug\81\App1.Android.csprojAssemblyReference.cache
