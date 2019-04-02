@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaspe\\Source\\Repos\\MtGApp\\AI_ML_Test\\AI_ML_Test.csproj",
+      "projectUniqueName": "C:\\Users\\jaspe\\source\\repos\\Project9App\\AI_ML_Test\\AI_ML_Test.csproj",
       "projectName": "AI_ML_Test",
-      "projectPath": "C:\\Users\\jaspe\\Source\\Repos\\MtGApp\\AI_ML_Test\\AI_ML_Test.csproj",
+      "projectPath": "C:\\Users\\jaspe\\source\\repos\\Project9App\\AI_ML_Test\\AI_ML_Test.csproj",
       "packagesPath": "C:\\Users\\jaspe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaspe\\Source\\Repos\\MtGApp\\AI_ML_Test\\obj\\",
+      "outputPath": "C:\\Users\\jaspe\\source\\repos\\Project9App\\AI_ML_Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

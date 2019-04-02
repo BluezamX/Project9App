@@ -3,43 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Pages.SetPageMaster"
              Title="Master">
-    <StackLayout>
-        <ListView x:Name="MenuItemsListView"
-              SeparatorVisibility="None"
-              HasUnevenRows="true"
-              ItemsSource="{Binding MenuItems}">
-            <ListView.Header>
-                <Grid BackgroundColor="#03A9F4">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="10"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="10"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="10"/>
-                    </Grid.RowDefinitions>
-                    <Label
-              Grid.Column="1"
-              Grid.Row="2"
-              Text="Magic: The Viewer"
-              Style="{DynamicResource SubtitleStyle}"/>
-                </Grid>
-            </ListView.Header>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
-                            <Label VerticalOptions="FillAndExpand" 
-                    VerticalTextAlignment="Center" 
-                    Text="{Binding Title}" 
-                    FontSize="24"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+  <ContentPage.Content>
+    <StackLayout BackgroundColor="White" Padding ="10 , 30 , 10, 10">
+      <Button x:Name="HomeBtn" Text="Home" BackgroundColor="White" TextColor="DarkGray" HorizontalOptions="StartAndExpand" Command="{Binding GoHomeCommand}" />
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="FirstBtn" Text="Expansion" BackgroundColor="White" TextColor="DarkGray" HorizontalOptions="StartAndExpand" Command="{Binding GoFirstCommand}" />
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="SecondBtn" Text="Core" BackgroundColor="White" TextColor="DarkGray" HorizontalOptions="StartAndExpand" Command="{Binding GoSecondCommand}" />
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="ThirdBtn" Text="Draft" TextColor="DarkGray" BackgroundColor="White" HorizontalOptions="StartAndExpand" Command="{Binding GoThirdCommand}"/>
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="FourthBtn" Text="Commander" TextColor="DarkGray" BackgroundColor="White" HorizontalOptions="StartAndExpand" Command="{Binding GoFourthCommand}"/>
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="FifthBtn" Text="Deck" TextColor="DarkGray" BackgroundColor="White" HorizontalOptions="StartAndExpand" Command="{Binding GoFifthCommand}"/>
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="SixthBtn" Text="Promo" TextColor="DarkGray" BackgroundColor="White" HorizontalOptions="StartAndExpand" Command="{Binding GoSixthCommand}"/>
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+      <Button x:Name="SeventhBtn" Text="Silver-Border" TextColor="DarkGray" BackgroundColor="White" HorizontalOptions="StartAndExpand" Command="{Binding GoSeventhCommand}"/>
+      <BoxView HeightRequest="0.5" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
     </StackLayout>
+  </ContentPage.Content>
 </ContentPage>
