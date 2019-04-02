@@ -1,5 +1,5 @@
-BundleAssemblies=false
-AotAssemblies=false
+BundleAssemblies=False
+AotAssemblies=False
 AndroidAotMode=
 ExplicitCrunch=False
 EnableProguard=
@@ -18,7 +18,7 @@ AndroidUseLatestPlatformSdk=false
 TargetFrameworkVersion=v8.1
 AndroidCreatePackagePerAbi=
 OS=Windows_NT
-DesignTimeBuild=
+DesignTimeBuild=true
 AndroidIncludeDebugSymbols=True
-AdbTarget=-s XED4C18627000065
+AdbTarget=
 AdbOptions=

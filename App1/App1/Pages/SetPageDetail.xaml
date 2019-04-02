@@ -3,17 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Pages.SetPageDetail"
              Title="Detail">
-  <ContentPage.Content>
-    <StackLayout>
-      <Button x:Name="UpdateButton"
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="UpdateButton"
                     Text="Update"
                     Command="{Binding updateCommand}"/>
 
-      <ListView x:Name="MyListView"
+            <ListView x:Name="MyListView"
                       ItemsSource="{Binding Items}"
                       CachingStrategy="RecycleElement">
-        <!--Built in Cells-->
-      </ListView>
-    </StackLayout>
-  </ContentPage.Content>
+                <!--Built in Cells-->
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

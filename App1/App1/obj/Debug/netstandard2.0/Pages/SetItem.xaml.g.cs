@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.Pages.SetPageMaster.xaml", "Pages/SetPageMaster.xaml", typeof(global::App1.Pages.SetPageMaster))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.Pages.SetItem.xaml", "Pages/SetItem.xaml", typeof(global::App1.Pages.SetItem))]
 
 namespace App1.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\SetPageMaster.xaml")]
-    public partial class SetPageMaster : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\SetItem.xaml")]
+    public partial class SetItem : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView MenuItemsListView;
+        private global::CustomRenderer.NativeListView nativeListView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SetPageMaster));
-            MenuItemsListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MenuItemsListView");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SetItem));
+            nativeListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::CustomRenderer.NativeListView>(this, "nativeListView");
         }
     }
 }

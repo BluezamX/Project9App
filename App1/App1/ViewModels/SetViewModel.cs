@@ -1,84 +1,76 @@
-﻿using App1.Managers;
+﻿using App1.CustomViewCells;
+using App1.Managers;
 using App1.Models.MTG;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
-  public class SetViewModel : INotifyPropertyChanged
-  {
-    public ObservableCollection<MTGSet> items { get; set; }
-    public ObservableCollection<MTGSet> Items
+    class SetViewModel : INotifyPropertyChanged
     {
-      get => items;
-      set
-      {
-        if (value == items) return;
-        items = value;
-        OnPropertyChanged(nameof(Items));
-      }
-    }
-
-    private List<MTGSet> sets { get; set; }
-
-    public ListView myListView;
-    public ListView MyListView
-    {
-      get => myListView;
-      set
-      {
-        if (value == myListView) return;
-        myListView = value;
-        OnPropertyChanged(nameof(MyListView));
-      }
-    }
-
-    public ICommand updateCommand { get; set; }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected virtual void OnPropertyChanged(string propertyName = null)
-    {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
-    public SetViewModel()
-    {
-      updateCommand = new Command(async () =>
-      {
-        try
+        public ObservableCollection<MTGSet> items { get; set; }
+        public ObservableCollection<MTGSet> Items
         {
-          System.Diagnostics.Debug.WriteLine("Patatofiel SVM");
-          var list = await ApiManager.GetSets();
-          DatabaseManager.AddSets(list);
-          FillSets();
+            get => items;
+            set
+            {
+                if (value == items) return;
+                items = value;
+                OnPropertyChanged(nameof(Items));
+            }
         }
-        catch (Exception ex)
+
+        private List<MTGSet> sets { get; set; }
+
+        public ListView myListView;
+        public ListView MyListView
         {
-          System.Diagnostics.Debug.WriteLine("Piemellikker " + ex);
+            get => myListView;
+            set
+            {
+                if (value == myListView) return;
+                myListView = value;
+                OnPropertyChanged(nameof(MyListView));
+            }
         }
-      });
 
-      FillSets();
-    }
+        public ICommand updateCommand { get; set; }
 
-    private void FillSets()
-    {
-      System.Diagnostics.Debug.WriteLine("Patatofiel SVM Fill");
-      Items = new ObservableCollection<MTGSet>();
-      if (DatabaseManager.SetTableFilled())
-      {
-        sets = DatabaseManager.GetSets(new List<string> { App.setType });
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        foreach (MTGSet set in sets)
+        protected virtual void OnPropertyChanged(string propertyName = null)
         {
-          items.Add(set);
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-      }
+
+        public SetViewModel()
+        {
+            updateCommand = new Command(async () =>
+            {
+                var list = await ApiManager.GetSets();
+                DatabaseManager.AddSets(list);
+                FillSets();
+            });
+            FillSets();
+        }
+
+        private void FillSets()
+        {
+            Items = new ObservableCollection<MTGSet>();
+            if (DatabaseManager.SetTableFilled())
+            {
+                sets = DatabaseManager.GetSets(new List<string> {App.setType});
+
+                foreach (MTGSet set in sets)
+                {
+                    items.Add(set);
+                }
+            }
+        }
     }
-  }
 }

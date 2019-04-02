@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace App1.Managers
 {
-    public class ApiManager
+    class ApiManager
     {
         private static string baseUrl = "https://api.scryfall.com";
         private static string setsUrl = "/sets";

@@ -4,74 +4,60 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
-  public class CardViewModel : INotifyPropertyChanged
-  {
-    public MTGSet set;
-
-    public ObservableCollection<Card> items { get; set; }
-    public ObservableCollection<Card> Items
+    class CardViewModel : INotifyPropertyChanged
     {
-      get => items;
-      set
-      {
-        if (value == items) return;
-        items = value;
-        OnPropertyChanged(nameof(Items));
-      }
-    }
+        public MTGSet set;
 
-    private List<Card> cards { get; set; }
-
-    public ListView myListView;
-    public ListView MyListView
-    {
-      get => myListView;
-      set
-      {
-        if (value == myListView) return;
-        myListView = value;
-        OnPropertyChanged(nameof(MyListView));
-      }
-    }
-
-    public ICommand updateCommand { get; set; }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected virtual void OnPropertyChanged(string propertyName = null)
-    {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
-    public CardViewModel(MTGSet set)
-    {
-      updateCommand = new Command(async () =>
-      {
-        try
+        public ObservableCollection<Card> items { get; set; }
+        public ObservableCollection<Card> Items
         {
-          System.Diagnostics.Debug.WriteLine("Patatofiel SVM");
-          var list = await ApiManager.GetCards(set.code);
-          DatabaseManager.AddCards(list);
-          FillCards();
+            get => items;
+            set
+            {
+                if (value == items) return;
+                items = value;
+                OnPropertyChanged(nameof(Items));
+            }
         }
-        catch (Exception ex)
+
+        private List<Card> cards { get; set; }
+
+        public ListView myListView;
+        public ListView MyListView
         {
-          System.Diagnostics.Debug.WriteLine("Piemellikker " + ex);
+            get => myListView;
+            set
+            {
+                if (value == myListView) return;
+                myListView = value;
+                OnPropertyChanged(nameof(MyListView));
+            }
         }
-      });
 
-      this.set = set;
-      FillCards();
-    }
+        public ICommand updateCommand { get; set; }
 
-    private void FillCards()
-    {
-      Items = new ObservableCollection<Card>(cards);
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public CardViewModel(MTGSet set)
+        {
+            this.set = set;
+            FillCards();
+        }
+
+        private void FillCards()
+        {
+            Items = new ObservableCollection<Card>(cards);
+        }
     }
-  }
 }

@@ -1,34 +1,37 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Xamarin.Forms;
 
 namespace App1.CustomViewCells
 {
-  public class CardViewCell : ViewCell
-  {
-    public CardViewCell()
+    public class CardViewCell : ViewCell
     {
-      var manaLabel = new Label();
-      var nameLabel = new Label();
-      var typeLabel = new Label();
-      var vLayout = new StackLayout();
-      var hLayout = new StackLayout();
+        public CardViewCell()
+        {
+            var manaLabel = new Label();
+            var nameLabel = new Label();
+            var typeLabel = new Label();
+            var vLayout = new StackLayout();
+            var hLayout = new StackLayout();
 
-      nameLabel.SetBinding(Label.TextProperty, new Binding("name"));
-      manaLabel.SetBinding(Label.TextProperty, new Binding("manacost"));
-      typeLabel.SetBinding(Label.TextProperty, new Binding("type"));
+            nameLabel.SetBinding(Label.TextProperty, new Binding("name"));
+            manaLabel.SetBinding(Label.TextProperty, new Binding("manacost"));
+            typeLabel.SetBinding(Label.TextProperty, new Binding("type"));
 
-      hLayout.Orientation = StackOrientation.Horizontal;
-      hLayout.HorizontalOptions = LayoutOptions.Fill;
-      vLayout.HorizontalOptions = LayoutOptions.End;
-      manaLabel.FontSize = 12;
-      typeLabel.FontSize = 12;
-      nameLabel.FontSize = 24;
+            hLayout.Orientation = StackOrientation.Horizontal;
+            hLayout.HorizontalOptions = LayoutOptions.Fill;
+            vLayout.HorizontalOptions = LayoutOptions.End;
+            manaLabel.FontSize = 12;
+            typeLabel.FontSize = 12;
+            nameLabel.FontSize = 24;
 
-      vLayout.Children.Add(typeLabel);
-      vLayout.Children.Add(manaLabel);
-      hLayout.Children.Add(nameLabel);
-      hLayout.Children.Add(vLayout);
+            vLayout.Children.Add(typeLabel);
+            vLayout.Children.Add(manaLabel);
+            hLayout.Children.Add(nameLabel);
+            hLayout.Children.Add(vLayout);
 
-      View = hLayout;
+            View = hLayout;
+        }
     }
-  }
 }
