@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\JasperW\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
 C:\Users\JasperW\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
 C:\Users\JasperW\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
@@ -35,6 +36,8 @@ C:\Users\jaspe\Downloads\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyIn
 C:\Users\jaspe\Downloads\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
 C:\Users\jaspe\Downloads\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\jaspe\Downloads\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+=======
+>>>>>>> parent of 8396b1c... Revert "Push before overhaul Master Detail Pages"
 C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
 C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\Pages\BasePage.xaml.g.cs
@@ -51,3 +54,7 @@ C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\App1.
 C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
 C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\jaspe\source\repos\Project9App\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\jaspe\source\repos\Project9App\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\jaspe\source\repos\Project9App\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\jaspe\source\repos\Project9App\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp

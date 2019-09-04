@@ -9,7 +9,7 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <pages:SetPageDetail />
+              <pages:SetPageDetail /> <!--Goes wrong here-->
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

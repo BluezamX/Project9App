@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1.iOS", "App1\App1.iOS\A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App1", "App1\App1\App1.csproj", "{D2A37C9D-7DF4-44B7-9A12-2150B186F038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI_ML_Test", "AI_ML_Test\AI_ML_Test.csproj", "{78BFB51C-6E02-4DD5-BCF1-5D471B7061A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AI_ML_Test", "AI_ML_Test\AI_ML_Test.csproj", "{78BFB51C-6E02-4DD5-BCF1-5D471B7061A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
